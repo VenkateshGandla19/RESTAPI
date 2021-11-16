@@ -26,18 +26,18 @@ public class Controller {
 	}
 	
 	
-	@RequestMapping(value="/marks", method=RequestMethod.GET)
-	public List<Student> getMarks(){
-		return this.studentService.getMarks();
+	@RequestMapping(value="/students", method=RequestMethod.GET)
+	public List<Student> getDetails(){
+		return this.studentService.getDetails();
 	}
 	
 	
-	@RequestMapping(value="/mark/{studentId}", method=RequestMethod.GET)
-	public Student getMark(@PathVariable String studentId) {
-		return this.studentService.getMark(Long.parseLong(studentId));
+	@RequestMapping(value="/student/{studentId}", method=RequestMethod.GET)
+	public Student getDetail(@PathVariable String studentId) {
+		return this.studentService.getDetail(Long.parseLong(studentId));
 	}
 	
-	@RequestMapping(value="/marks", method=RequestMethod.POST)
+	@RequestMapping(value="/students", method=RequestMethod.POST)
 	public Student addStudent(@RequestBody Student student) {
 		
 		return this.studentService.addStudent(student);

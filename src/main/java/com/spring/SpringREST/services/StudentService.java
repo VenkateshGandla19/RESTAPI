@@ -6,9 +6,9 @@ import com.spring.SpringREST.entities.Student;
 
 public interface StudentService {
 
-	public List<Student> getMarks();
+	public List<Student> getDetails();
 	
-	public Student getMark(long studentId);
+	public Student getDetail(long studentId);
 
 	public Student addStudent(Student student);
 }

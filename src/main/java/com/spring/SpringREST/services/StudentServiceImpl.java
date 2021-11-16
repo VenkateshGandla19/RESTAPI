@@ -21,12 +21,12 @@ public class StudentServiceImpl implements StudentService {
 	}
 	
 	@Override
-	public List<Student> getMarks() {
+	public List<Student> getDetails() {
 		return list;
 	}
 
 	@Override
-	public Student getMark(long studentId) {
+	public Student getDetail(long studentId) {
 
 		Student s=null;
 		for(Student student:list) {
