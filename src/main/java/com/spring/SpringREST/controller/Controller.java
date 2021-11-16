@@ -32,7 +32,7 @@ public class Controller {
 	}
 	
 	
-	@RequestMapping(value="/mark", method=RequestMethod.GET)
+	@RequestMapping(value="/mark/{studentId}", method=RequestMethod.GET)
 	public Student getMark(@PathVariable String studentId) {
 		return this.studentService.getMark(Long.parseLong(studentId));
 	}
